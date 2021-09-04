@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Chemecal-app</title>
+    <meta name="description" content="じゃがりこのカロリー計算アプリケーション">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--CSS -->
+    <link rel="stylesheet" href="css/snack.css">
+    <!-- <link rel="stylesheet" href="css/phone.css" media="screen and (max-width:800px)">
+    <link rel="stylesheet" href="css/ipad.css" media="screen and  (min-width:800px) and (max-width:1200px)">
+    <link rel="stylesheet" href="css/pc.css" media="screen and (min-width:1200px)"> -->
+  </head>
+  <body>
+    <div id="home" class="big-bg">
+      <div id="content">
+          <div id="mainflase">
+              <h1>毎日食べ続けたら何キロ分？？</h1>
+          </div>
+        <img id="snack" src="images/snack_stick.png" alt="じゃがりこ画像">
+        <img id="weight" src="images/weight.png" alt="体重画像">  
+        <p id="countquestion">1日に食べる量(個)</p>
+        <input id="count" type="number" name="num01">
+        <p id="mounthquestion">食べ続ける期間(月)</p>
+        <input id="mounth" type="number" name="num01" onelick="good()"/>
+        <input id="result" type="button" value="結果" onclick="hello()"/>
+    </div>
+    </div><!-- /#home-->
+  </body>
+  <script src="result.js"></script>
+ 
+</html>

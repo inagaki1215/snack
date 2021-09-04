@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>snack-app</title>
+    <meta name="description" content="じゃがりこのカロリー計算アプリケーション">
+    <!--CSS -->
+    <link rel="stylesheet" href="css/resultNoprobrem.css">
+
+  </head>
+  <body>
+    <div id="home" class="big-bg">
+      <div id="content">
+          <div id="mainflase">
+              <h1>問題ない？？</h1>
+          </div>
+        <img id="noprobrem" src="images/noprobrem.png" alt="痩せてる画像"> 
+
+        <div id="advace">
+          <h2>食べ過ぎに注意しましょう!!</h2>
+        </div>
+        <!-- <p id="text"></p> -->
+        <p id="allresult"></p>
+        <p id="mounths"></p>
+    </div>
+
+  </body>
+  <script>
+    console.log("resultnoprobremが読み込まれたよ");
+
+    var url = new URL(window.location.href);
+
+    var params = url.searchParams;
+    const kg = params.get('kg');
+    const resultKg=(Math.round(kg * 10) / 10)
+    console.log(resultKg);
+
+    // document.getElementById("text").textContent=resultKg.toString() + "kg";
+    const allresult = "+" + resultKg + "kg";
+    document.getElementById("allresult").textContent=allresult;
+    console.log(allresult);
+
+    document.getElementById("mounths").value;
+    console.log(mounths);
+  </script>
+</html>
+

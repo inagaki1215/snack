@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+
+}
+
+body{
+    font-family:  "游ゴシック体","Yu Gothic Medium", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color:black;
+
+}
+
+/* 背景 */
+#home{
+    background-color: rgb(57, 156, 48);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+}
+
+
+#content{
+    width: 80vw;
+    height: 90vh;
+    background-color: coral;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;    
+}
+
+
+#mainflase{
+    height: 70px;
+    width: 450px;
+    background-color: rgb(200, 106, 209);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+#snack{
+    height: 200px;
+    width: 200px;
+    background-color: darkred;
+    position: absolute;
+    left: 170px;
+    top:100px;
+}
+
+
+#weight{
+    height: 220px;
+    width: 180px;
+    background-color: darkred;
+    position: absolute;
+    left: 600px;
+    top:100px;
+
+}
+
+
+#countquestion{
+    height: 30px;
+    width: 140px;
+    background-color: darkred;
+    position: absolute;
+    left: 300px;
+    top:330px;
+}
+
+#count{
+    height: 20px;
+    width: 100px;
+    /* background-color: darkred; */
+    position: absolute;
+    left: 320px;
+    top:400px;
+
+}
+
+
+#mounthquestion{
+    height: 30px;
+    width: 150px;
+    background-color: darkred;
+    position: absolute;
+    left: 520px;
+    top:330px;
+}
+
+#mounth{
+    height: 20px;
+    width: 100px;
+    /* background-color: darkred; */
+    position: absolute;
+    left: 540px;
+    top:400px;
+
+}
+
+#result{
+    height: 30px;
+    width: 120px;
+    background-color: darkred;
+    position: absolute;
+    left: 420px;
+    top:450px;
+    text-align: center
+}

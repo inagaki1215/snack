@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>snack-app</title>
+    <meta name="description" content="じゃがりこのカロリー計算アプリケーション">
+    <!--CSS -->
+    <link rel="stylesheet" href="css/resultLittlefat.css">
+  </head>
+  <body>
+    <div id="home" class="big-bg">
+      <div id="content">
+          <div id="mainflase">
+              <h1>注意…</h1>
+          </div>
+        <img id="littlefat" src="images/littlefat.png" alt="少し太った画像"> 
+
+        <div id="advace">
+          <h2>肥満予備軍!?!?</h2>
+        </div>
+        <p id="text"></p>
+        <p id="allresult"></p>
+    </div>
+  </body>
+
+  <script>
+    console.log("resultnoprobremが読み込まれたよ");
+
+    var url = new URL(window.location.href);
+
+    var params = url.searchParams;
+    const kg = params.get('kg');
+    const resultKg=(Math.round(kg * 10) / 10)
+    console.log(resultKg);
+
+    document.getElementById("text").textContent=resultKg.toString() + "kg";
+    const allresult = "+" + resultKg + "kg";
+    document.getElementById("allresult").textContent=allresult;
+    console.log(allresult);
+  </script>
+  </html>
