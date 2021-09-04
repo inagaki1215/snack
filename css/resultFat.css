@@ -7,7 +7,7 @@ html{
 
 body{
     font-family:  "游ゴシック体","Yu Gothic Medium", "ヒラギノ角ゴ Pro W3", sans-serif;
-    line-height: 1.7;
+    letter-spacing: 0.1em;
     color:black;
 
 }
@@ -23,60 +23,75 @@ body{
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-
 }
 
 
 #content{
     width: 80vw;
-    height: 80vh;
-    background-color: coral;
+    height: 100vh;
+    /* background-color: coral; */
     margin-left: auto;
     margin-right: auto;
     position: relative;    
 }
 
-
-
+/*  */
 #fat{
-    width: 250px;
-    height: 300px;
-    background-color: rgb(80, 191, 255);
+    width: 350px;
+    height: 400px;
+    /* background-color: rgb(80, 191, 255); */
     position: absolute;
-    left: 650px;
-    top: 120px;
+    left: 600px;
+    top: 95px;
 }
 
+/* メインフレーズ領域*/
 #mainflase{
     font-size: 25px;
-    width: 200px;
-    height: 70px;
-    background-color:darkmagenta;
+    width: 450px;
+    height: 90px;
+    /* background-color:darkmagenta; */
     margin-left: auto;
     margin-right: auto;
     position: relative;    
-
 }
 
+/* メインフレーズ */
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+/* アドバイス領域 */
 #advace{
-    width: 300px;
-    height: 80px;
-    background-color: rgb(193, 139, 224);
+    width: 550px;
+    height: 180px;
+    /* background-color: rgb(193, 139, 224); */
     position: absolute;
-    left: 200px;
+    left: 100px;
     top: 350px;
 }
 
+/* アドバイス */
+h2{
+    font-size: 40px;
+    text-align: center;
+
+}
+
+/* 増えた体重領域 */
 #allresult{
-    height: 100px;
-    width: 400px;
-    background-color: darkred;
+    height: 80px;
+    width: 200px;
+    /* background-color: darkred; */
     position: absolute;
-    left: 100px;
-    top:200px;
+    left: 250px;
+    top:210px;
     text-align: center
 }
 
+/* 増えた体重 */
 p{
     font-size: 50px;
+    font-weight:bold;
 }

@@ -7,7 +7,7 @@ html{
 
 body{
     font-family:  "游ゴシック体","Yu Gothic Medium", "ヒラギノ角ゴ Pro W3", sans-serif;
-    letter-spacing: 0.1em;
+
     color:black;
 
 }
@@ -38,46 +38,53 @@ body{
 
 
 #mainflase{
-    height: 70px;
-    width: 480px;
+    height: 35px;
+    width: 250px;
     /* background-color: rgb(200, 106, 209); */
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    text-align: center
+    text-align: center;
+    top:50px;
 
+
+}
+
+h1{
+    font-size: 16px;
+    font-weight:bold;
 }
 
 /* じゃがりこ画像 */
 #snack{
-    height: 200px;
-    width: 200px;
+    height: 90px;
+    width: 90px;
     /* background-color: darkred; */
     position: absolute;
-    left: 170px;
-    top:100px;
+    left: 20px;
+    top:130px;
 }
 
 /* 体重計画像 */
 #weight{
-    height: 220px;
-    width: 180px;
+    height: 90px;
+    width: 70px;
     /* background-color: darkred; */
     position: absolute;
-    left: 600px;
-    top:100px;
+    left: 190px;
+    top:130px;
 
 }
 
 /* 矢印画像 */
 #arrow{
-height: 220px;
-width: 180px;
+height: 90px;
+width: 70px;
 /* background-color: darkred; */
 position: absolute;
-left: 390px;
-top:100px;
+left: 110px;
+top:130px;
 
 }
 
@@ -88,9 +95,9 @@ top:100px;
     height: 30px;
     width: 160px;
     /* background-color: darkred; */
-    position: absolute;
-    left: 250px;
-    top:340px;
+    position:absolute;
+    left: 70px;
+    top: 250px;
     text-align: center
 }
 
@@ -100,8 +107,8 @@ top:100px;
     width: 100px;
     /* background-color: darkred; */
     position: absolute;
-    left: 275px;
-    top:400px;
+    left: 90px;
+    top:300px;
 
 }
 
@@ -111,8 +118,8 @@ top:100px;
     width: 170px;
     /* background-color: darkred; */
     position: absolute;
-    left: 550px;
-    top:340px;
+    left: 65px;
+    top:330px;
     text-align: center
 }
 
@@ -122,8 +129,8 @@ top:100px;
     width: 100px;
     /* background-color: darkred; */
     position: absolute;
-    left: 580px;
-    top:400px;
+    left: 90px;
+    top:380px;
 
 }
 
@@ -133,7 +140,7 @@ top:100px;
     width: 120px;
     /* background-color: darkred; */
     position: absolute;
-    left: 425px;
-    top:450px;
+    left: 82px;
+    top:440px;
     text-align: center
 }

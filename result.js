@@ -1,17 +1,5 @@
 'use strict';
 
-// const counts = Number(count);
-// const mounths =Number(mounrh);
-
-// const cal = Number(counts) * 299 * Number(mounths);
-// const result = Number(cal) / 7200;
-
-// if(result>=5){
-// alert("いい感じ")
-// }else{
-// alert("普通")
-// };
-
 function hello(){
     console.log("result.jsの中のhello");
     const snack = document.getElementById("count").value;
@@ -35,10 +23,10 @@ function hello(){
 
 }
 
-
 function good(){
     console.log("ok");
     const mounths = document.getElementById("mounth").value;
     console.log(mounths);
+
 }
 

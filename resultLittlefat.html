@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>snack-app</title>
     <meta name="description" content="じゃがりこのカロリー計算アプリケーション">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!--CSS -->
     <link rel="stylesheet" href="css/resultLittlefat.css">
+    <link rel="stylesheet" href="css/phoneLittlefat.css" media="screen and  (max-width:800px)">
   </head>
   <body>
     <div id="home" class="big-bg">
@@ -18,11 +20,11 @@
         <div id="advace">
           <h2>肥満予備軍!?!?</h2>
         </div>
-        <p id="text"></p>
         <p id="allresult"></p>
+        <p id="mounths"></p>
     </div>
-  </body>
 
+  </body>
   <script>
     console.log("resultnoprobremが読み込まれたよ");
 
@@ -30,12 +32,15 @@
 
     var params = url.searchParams;
     const kg = params.get('kg');
-    const resultKg=(Math.round(kg * 10) / 10)
+    const resultKg=(Math.round(kg * 10) / 10);
     console.log(resultKg);
 
-    document.getElementById("text").textContent=resultKg.toString() + "kg";
+    // document.getElementById("text").textContent=resultKg.toString() + "kg";
     const allresult = "+" + resultKg + "kg";
     document.getElementById("allresult").textContent=allresult;
     console.log(allresult);
+
+    document.getElementById("mounths").value;
+    console.log(mounths);
   </script>
   </html>

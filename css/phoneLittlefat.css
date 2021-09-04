@@ -7,14 +7,13 @@ html{
 
 body{
     font-family:  "游ゴシック体","Yu Gothic Medium", "ヒラギノ角ゴ Pro W3", sans-serif;
-    letter-spacing: 0.1em;
     color:black;
 
 }
 
 /* 背景 */
 #home{
-    background-color:rgb(151, 226, 76);
+    background-color:rgb(224, 226, 73);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -29,52 +28,54 @@ body{
 #content{
     width: 80vw;
     height: 100vh;
-    /* background-color: coral; */
+    background-color: coral;
     margin-left: auto;
     margin-right: auto;
     position: relative;    
 }
 
-/* 痩せてる画像 */
-#noprobrem{
-    width: 350px;
-    height: 400px;
-    /* background-color: rgb(80, 191, 255); */
+
+
+/* 画像 */
+#littlefat{
+    width: 250px;
+    height: 350px;
+    background-color: rgb(80, 191, 255);
     position: absolute;
-    left: 600px;
-    top: 95px;
+    left: 80px;
+    top: 500px;
 }
 
 /* メインフレーズ領域*/
 #mainflase{
-    font-size: 25px;
-    width: 450px;
-    height: 90px;
-    /* background-color:darkmagenta; */
+    width: 300px;
+    height: 100px;
+    background-color:darkmagenta;
     margin-left: auto;
     margin-right: auto;
-    position: relative;    
+    position: relative; 
+    top:100px;
 }
 
 /* メインフレーズ */
 h1{
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
 }
 
 /* アドバイス領域 */
 #advace{
-    width: 550px;
-    height: 180px;
-    /* background-color: rgb(193, 139, 224); */
+    width:400px;
+    height: 60px;
+    background-color: rgb(193, 139, 224);
     position: absolute;
-    left: 100px;
-    top: 350px;
+    left: 0;
+    top: 900px;
 }
 
 /* アドバイス */
 h2{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 
 }
@@ -83,11 +84,11 @@ h2{
 #allresult{
     height: 80px;
     width: 200px;
-    /* background-color: darkred; */
+    background-color: darkred;
     position: absolute;
-    left: 250px;
-    top:210px;
-    text-align: center
+    left: 100px;
+    top:330px;
+    text-align: center;
 }
 
 /* 増えた体重 */
@@ -95,3 +96,4 @@ p{
     font-size: 50px;
     font-weight:bold;
 }
+
