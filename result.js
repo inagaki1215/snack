@@ -12,7 +12,8 @@ function hello(){
 
     if(kg<=5){
         console.log("痩せる");
-        window.location.href = 'resultNoprobrem.html?kg=' + kg.toString();
+        window.location.href = 'resultNoprobrem.html?kg&mounths=' + kg.toString();
+  
     }else if(kg>5 && kg<=10){
         console.log("普通");
         window.location.href = 'resultLittlefat.html?kg=' + kg.toString();
@@ -23,10 +24,4 @@ function hello(){
 
 }
 
-function good(){
-    console.log("ok");
-    const mounths = document.getElementById("mounth").value;
-    console.log(mounths);
-
-}
 
