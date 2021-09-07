@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>snack-app</title>
-    <meta name="description" content="じゃがりこのカロリー計算アプリケーション">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!--CSS -->
-
-    <!-- <link rel="stylesheet" href="css/resultNoprobrem.css"> -->
-    <link rel="stylesheet" href="css/resultNoprobrem.css">
-    <link rel="stylesheet" href="css/phoneNoprobrem.css" media="screen and (max-width:800px)">
-  </head>
-  <body>
-    <div id="home" class="big-bg">
-      <div id="content">
-          <div id="mainflase">
-              <h1>問題ない？？</h1>
-          </div>
-        <img id="noprobrem" src="images/noprobrem.png" alt="痩せてる画像"> 
-
-        <div id="advace">
-          <h2>食べ過ぎに注意しましょう!!</h2>
-        </div>
-        <!-- <p id="text"></p> -->
-        <p id="allresult"></p>
-        <h3 id="days"></h3>
+   <head>
+      <meta charset="UTF-8">
+      <title>snack-app</title>
+      <meta name="description" content="じゃがりこのカロリー計算アプリケーション">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <!--CSS -->
+      <!-- <link rel="stylesheet" href="css/resultNoprobrem.css"> -->
+      <link rel="stylesheet" href="css/resultNoprobrem.css">
+      <link rel="stylesheet" href="css/phoneNoprobrem.css" media="screen and (max-width:800px)">
+   </head>
+   <body>
+      <div id="home" class="big-bg">
+        <div id="content">
+            <div id="mainflase">
+               <h1>問題ない？？</h1>
+            </div>
+            <img id="noprobrem" src="images/noprobrem.png" alt="痩せてる画像"> 
+            <div id="advace">
+               <h2>食べ過ぎに注意しましょう!!</h2>
+            </div>
+            <!-- <p id="text"></p> -->
+            <div>
+               <p id="allresult"></p>
+            </div>
+            <div id="day">
+               <h3 id="months"></h3>
+            </div>
+      </div>
     </div>
-
-  </body>
-  <script>
-    console.log("resultnoprobremが読み込まれたよ");
-
-    var url = new URL(window.location.href);
-
-    var params = url.searchParams;
-    const kg = params.get('kg');
-    const resultKg=(Math.round(kg * 10) / 10)
-    console.log(resultKg);
-
-    // document.getElementById("text").textContent=resultKg.toString() + "kg";
-    const allresult = "+" + resultKg + "kg";
-    document.getElementById("allresult").textContent=allresult;
-    console.log(allresult);
-
-    const days = params.get("mounths");
-    console.log(days);
-
-
-
-  </script>
+   </body>
+   <script>
+      console.log("resultnoprobremが読み込まれたよ");
+      
+      var url = new URL(window.location.href);
+      
+      var params = url.searchParams;
+      const kg = params.get('kg');
+      const resultKg=(Math.round(kg * 10) / 10)
+      console.log(resultKg);
+      
+      // document.getElementById("text").textContent=resultKg.toString() + "kg";
+      const allresult = "+" + resultKg + "kg";
+      document.getElementById("allresult").textContent=allresult;
+      console.log(allresult);
+      
+      const months = params.get("month");
+      document.getElementById("months").textContent=months.toString() + "ヶ月後には…";
+      console.log(months);
+      
+      
+      
+   </script>
 </html>

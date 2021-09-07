@@ -106,7 +106,7 @@ top:100px;
 }
 
 /* 期間の質問 */
-#mounthquestion{
+#monthquestion{
     height: 30px;
     width: 170px;
     /* background-color: darkred; */
@@ -117,7 +117,7 @@ top:100px;
 }
 
 /* 期間の選択 */
-#mounth{
+#month{
     height: 20px;
     width: 100px;
     /* background-color: darkred; */

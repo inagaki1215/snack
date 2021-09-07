@@ -62,10 +62,26 @@ h1{
     text-align: center;
 }
 
+
+#day{
+    width: 350px;
+    height: 60px;
+    /* background-color: rgb(193, 139, 224); */
+    position: absolute;
+    left: 100px;
+    top: 190px;
+
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin: auto;
+}
 /* アドバイス領域 */
 #advace{
     width: 550px;
-    height: 180px;
+    height: 70px;
     /* background-color: rgb(193, 139, 224); */
     position: absolute;
     left: 100px;
@@ -76,6 +92,7 @@ h1{
 h2{
     font-size: 40px;
     text-align: center;
+    margin: auto;
 
 }
 
